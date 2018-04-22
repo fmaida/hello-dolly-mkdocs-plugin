@@ -1,6 +1,7 @@
-from mkdocs.plugins import BasePlugin
 import re
 from random import choice
+from mkdocs.plugins import BasePlugin
+from .lyrics import lyrics
 
 
 class HelloDolly(BasePlugin):
@@ -10,8 +11,8 @@ class HelloDolly(BasePlugin):
         return config
 
     def on_page_markdown(self, markdown, page, config, site_navigation):
-        caso = ["Well well hello dolly", "I said hello dolly", "It's so nice to have you back", "where you belong"]
-        markdown = markdown.replace("{{dolly}}", "&laquo; " + choice(caso) + " &raquo;")
+        markdown = markdown.replace("{{dolly}}",
+                                    "&laquo; {} &raquo;".format(choice(lyrics)))
         return markdown
 
     # def on_page_content(self, html, page, config, site_navigation):

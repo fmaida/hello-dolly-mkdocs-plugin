@@ -9,6 +9,8 @@ setup(
     author='Francesco Maida',
     author_email='francesco.maida@gmail.com',
     description='Hello Dolly is a very simple mkdocs plugin.',
+    install_requires=['mkdocs'],
+
 
     entry_points={
         'mkdocs.plugins': [
