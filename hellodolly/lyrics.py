@@ -1,3 +1,6 @@
+from random import choice
+
+
 lyrics = [
     "Hello, Dolly",
     "Well, hello, Dolly",
@@ -13,3 +16,7 @@ lyrics = [
     "Find her an empty lap, fellas",
     "Dolly'll never go away again",
 ]
+
+
+def random_lyrics():
+    return "&laquo; {} &raquo;".format(choice(lyrics))
