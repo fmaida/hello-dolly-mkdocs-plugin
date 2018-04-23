@@ -6,6 +6,7 @@ downloads
 eggs
 parts
 *.egg-info
+*.pyc
 lib
 lib64
 hellodolly/__pycache__/

@@ -1,16 +1,29 @@
 # Hello Dolly
 
-"Hello Dolly" is a very basic [mkdocs plugin](http://www.mkdocs.org/user-guide/plugins/) 
-that will try to teach you how to write a simple plugin for mkdocs, 
-inspired by this [built-in plugin](https://wordpress.org/plugins/hello-dolly/) of WordPress.
+"Hello Dolly" is a very basic 
+[mkdocs plugin](http://www.mkdocs.org/user-guide/plugins/) that searches in 
+all your mkdocs documents the tag `{{dolly}}` and substitutes it with a 
+random lyrics taken from "Hello Dolly!", the main song of the musical 
+of the same name.
 
-## Usage
+It was inspired by the once [built-in plugin](https://wordpress.org/plugins/hello-dolly/) 
+of WordPress, and it's main purpose is to help understanding how to write a simple plugin 
+for *mkdocs*.
+ 
 
-1. Execute `python setup.py develop` to install 
-   the plugin on your local machine
 
-2. In your mkdocs project, edit the `mkdocs.yml` file 
-   and add these few lines:
+## Quick start
+
+If you want to try this plugin as-it-is, follow these steps:
+
+1. Download this repo and (eventually) unzip it in a folder
+
+2. Inside the project folder, execute the command 
+   `python setup.py develop` to install 
+   the plugin on your local machine. 
+
+3. Go to your mkdocs project folder, edit the `mkdocs.yml` file 
+   and add these few lines at the end:
 
    ```yaml
    plugins:
@@ -19,10 +32,12 @@ inspired by this [built-in plugin](https://wordpress.org/plugins/hello-dolly/) o
 
 That's it.
 Now, each time you'll write the tag `{{dolly}}` 
-inside a page in your mkdocs document folder, 
-this plugin will substitute that sentence with 
+inside any page in your mkdocs document folder, 
+this plugin will substitute that tag with 
 a random lyric taken from the main song of the 
 musical "Hello Dolly".
+
+### An example
 
 For example, you could edit the `docs/index.md` 
 file and insert the tag in any place, like this:
@@ -36,13 +51,3 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 
 ## Commands
 ````
-
-The plugin will substitute your tag with:
-
-<h1>Welcome to MkDocs</h1>
-
-For full documentation visit [mkdocs.org](http://mkdocs.org).
-
-« It's so nice to have you back where you belong »
-
-<h2>Commands</h2>
