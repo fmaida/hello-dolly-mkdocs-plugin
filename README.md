@@ -1,8 +1,8 @@
 # Hello Dolly
 
 "Hello Dolly" is a very basic [mkdocs plugin](http://www.mkdocs.org/user-guide/plugins/) 
-that tries to teach how to write a plugin, 
-inspired by this [well-known plugin](https://wordpress.org/plugins/hello-dolly/) available in WordPress
+that will try to teach you how to write a simple plugin for mkdocs, 
+inspired by this [built-in plugin](https://wordpress.org/plugins/hello-dolly/) of WordPress.
 
 ## Usage
 
@@ -18,5 +18,7 @@ inspired by this [well-known plugin](https://wordpress.org/plugins/hello-dolly/)
    ```
 
 That's it.
-Now, each time you'll write the sentence "{{dolly}}" (without the quotes) 
-this plugin will substitute that sentence with a random lyric taken from "Hello Dolly".
+Now, each time you'll write the sentence `{{dolly}}` 
+this plugin will substitute that sentence with 
+a random lyric taken from the main song of the 
+musical "Hello Dolly".

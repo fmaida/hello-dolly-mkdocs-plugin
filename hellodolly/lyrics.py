@@ -19,4 +19,8 @@ lyrics = [
 
 
 def random_lyrics():
+    """
+    Picks a random verse from the lyrics
+    """
+
     return "&laquo; {} &raquo;".format(choice(lyrics))
