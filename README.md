@@ -18,7 +18,8 @@ inspired by this [built-in plugin](https://wordpress.org/plugins/hello-dolly/) o
    ```
 
 That's it.
-Now, each time you'll write the sentence `{{dolly}}` 
+Now, each time you'll write the tag `{{dolly}}` 
+inside a page in your mkdocs document folder, 
 this plugin will substitute that sentence with 
 a random lyric taken from the main song of the 
 musical "Hello Dolly".
