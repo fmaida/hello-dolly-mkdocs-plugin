@@ -5,7 +5,7 @@ from .lyrics import random_lyrics
 
 class HelloDolly(BasePlugin):
 
-    def on_page_markdown(self, markdown, page, config, site_navigation):
+    def on_page_markdown(self, markdown, **kwargs):
 
         # Now we'll search on the text each occurrence
         # of the tag {{dolly}} and we'll replace it with some

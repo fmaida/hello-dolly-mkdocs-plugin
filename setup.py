@@ -2,12 +2,12 @@ from setuptools import setup
 
 setup(
     name='HelloDolly',
-    version='1.0.0',
+    version='1.0.1',
     packages=['hellodolly'],
     url='https://github.com/fmaida/hello-dolly-mkdocs-plugin',
     license='MIT',
-    author='Your name',
-    author_email='your@email.com',
+    author='Francesco Maida',
+    author_email='fran@cesco.it',
     description='Hello Dolly is a very simple mkdocs plugin.',
     install_requires=['mkdocs'],
 
